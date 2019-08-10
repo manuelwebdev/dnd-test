@@ -10,7 +10,7 @@ export default {
     mounted() {
         const axios = require("axios");
 
-        axios.get("http://dnd5eapi.co/api/spells/")
+        axios.get("http://dnd5eapi.co/api/spells")
         .then(function(response) {
             console.log(response);
             
