@@ -1,4 +1,7 @@
 <template>
+    <div class="spells">
+        <h2>This is the spells component</h2>
+    </div>
     
 </template>
 
