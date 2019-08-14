@@ -1,7 +1,7 @@
 <template>
   <div class="spells">
     <h2>This is the spells component</h2>
-    <div>{{}}</div>
+    <div>{{info}}</div>
   </div>
 </template>
 
@@ -13,15 +13,10 @@ export default {
   mounted() {
     const axios = require("axios");
 
-    axios
-      .get("https://cors-anywhere.herokuapp.com/http://dnd5eapi.co/api/")
-      .then(function(response) {
-        console.log(response);
-      })
-      .catch(function(error) {
-        // handle error
-        console.log(error);
-      });
+    axios.get("https://cors-anywhere.herokuapp.com/http://dnd5eapi.co/api/spells")
+      .then(response => console.log(response.data.results[0].name))
+      .catch(error => console.log(error)); 
+
   }
 };
 </script>
