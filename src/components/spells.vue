@@ -1,9 +1,11 @@
 <template>
   <div class="spells">
-    <h2>This is the spells component</h2>
-    <ul>
-      <li v-for="classe in classes">{{ classe }}</li>
-    </ul>
+    <!-- <h2>This is the spells component</h2>
+    <h2 v-for="classes in classes" class="display-1">{{ classes.name }}</h2>
+    <v-btn v-for="classes in classes">{{classes.name}}</v-btn> -->
+    <v-card 12 max-width="344" class="mx-auto">
+      <v-card-title>I'm a title</v-card-title>
+    </v-card>
   </div>
 </template>
 
@@ -24,7 +26,7 @@ export default {
 
     axios
       .get(url)
-      //   .then(response => console.log(response.data.results))
+      .then(response => console.log(response.data.results))
       .then(res => {
         this.classes = res.data.results;
       })
