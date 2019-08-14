@@ -2,7 +2,7 @@
   <div class="spells">
     <h2>This is the spells component</h2>
     <ul>
-      <li>{{ classes }}</li>
+      <li v-for="classe in classes">{{ classe }}</li>
     </ul>
   </div>
 </template>
