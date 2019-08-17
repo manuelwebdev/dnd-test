@@ -15,7 +15,7 @@ export default {
   name: "spells",
   methods: {
       getSpells: (myUrl) => {
-        console.log(myUrl)
+        // console.log(myUrl)
     },
   },//end methods
   data() {
