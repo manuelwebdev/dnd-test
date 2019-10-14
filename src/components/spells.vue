@@ -1,8 +1,9 @@
 <template>
   <div class="spells">
     <!-- <h2 v-for="(test) in classes">{{ test.name }}</h2> -->
-    <v-card max-width="344" class="ml-3" v-for="(test) in classes">
-      <v-card-title>{{ test.name }}</v-card-title>
+    <v-card max-width="344" class="ml-3" v-for="spells in classes">
+      <v-card-title>{{ spells.name }}</v-card-title>
+      <p>{{ spells.url }}</p>
       <v-btn :click="getSpells('test')">get info</v-btn>
     </v-card>
   </div> 
@@ -30,7 +31,7 @@ export default {
 
     axios
       .get(url)
-      //   .then(response => console.log(response.data.results))
+        // .then(response => console.log(response.data.results))
       .then(res => {
         this.classes = res.data.results;
       })
