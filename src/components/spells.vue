@@ -1,11 +1,10 @@
 <template>
   <div class="spells">
-    <!-- <h2 v-for="(test) in classes">{{ test.name }}</h2> -->
-    <v-card max-width="344" class="ml-3" v-for="spells in classes">
+    <!-- <v-card max-width="344" class="ml-3" v-for="spells in classes">
       <v-card-title>{{ spells.name }}</v-card-title>
-      <p>{{ spells.url }}</p>
-      <v-btn :click="getSpells('test')">get info</v-btn>
-    </v-card>
+      <p>{{ spells.desc }}</p>
+    </v-card> -->
+    
   </div> 
 </template>
 
@@ -27,7 +26,7 @@ export default {
   mounted() {
     const axios = require("axios");
     const url =
-      "https://cors-anywhere.herokuapp.com/http://dnd5eapi.co/api/spells";
+      "https://api.open5e.com/spells/?format=json";
 
     axios
       .get(url)
