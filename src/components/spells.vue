@@ -6,13 +6,13 @@
     </v-card>-->
     <v-row>
       <v-col cols="3">
-        <v-card v-for="spells in classes" class="">
+        <v-card v-for="spells in classes" class="card">
           <v-card-title>{{ spells.name }}</v-card-title>
-          <div class="d-flex flex-column justify-start align-start">
-            <v-card-subtitle>{{ spells.level }}</v-card-subtitle>
-            <v-card-subtitle>{{ spells.school }}</v-card-subtitle>
+          <div class="subLevel">
+            <p class="body-2">{{ spells.level }}</p>
+            <p class="body-2">{{ spells.school }}</p>
           </div>
-          <v-card-subtitle> {{ spells.dnd_class }} </v-card-subtitle>
+          <v-card-subtitle>{{ spells.dnd_class }}</v-card-subtitle>
         </v-card>
       </v-col>
     </v-row>
@@ -50,5 +50,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.subLevel {
+  display: flex;
+  flex-direction: row;
+}
 </style>
 
