@@ -11,14 +11,15 @@
           <v-divider vertical></v-divider>
           <h3 class="body-1 conc">Ritual: {{ spells.ritual }}</h3>
         </div>
-        <div class="spellInfo">
-            <div class="castTime">
-                <h3 class="body-1">Casting Time</h3>
-                <h3 class="body-1"> {{ spells.casting_time }} </h3>
-            </div>
-        </div>
         <v-divider></v-divider>
-
+        <div class="spellInfo">
+          <div class="castTime">
+            <v-chip class="ma-2" color="success" outlined>
+              <i class="far fa-clock"></i>
+            </v-chip>
+            <h3 class="body-1">{{ spells.casting_time }}</h3>
+          </div>
+        </div>
       </v-col>
     </v-row>
   </div>
@@ -52,8 +53,8 @@ export default {
 
 <style lang="scss" scoped>
 .mySpell {
-    margin: 1rem;
-    padding: .5rem;
+  margin: 1rem;
+  padding: 0.5rem;
 
   .myCast {
     display: flex;
