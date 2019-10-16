@@ -1,19 +1,24 @@
 <template>
   <div class="spells">
-    <!-- <v-card max-width="344" class="ml-3" v-for="spells in classes">
-      <v-card-title>{{ spells.name }}</v-card-title>
-      <p>{{ spells.desc }}</p>
-    </v-card>-->
     <v-row>
-      <v-col cols="3">
-        <v-card v-for="spells in classes" class="card">
-          <v-card-title>{{ spells.name }}</v-card-title>
-          <div class="subLevel">
-            <p class="body-2">{{ spells.level }}</p>
-            <p class="body-2">{{ spells.school }}</p>
-          </div>
-          <v-card-subtitle>{{ spells.dnd_class }}</v-card-subtitle>
-        </v-card>
+      <v-col cols="3" v-for="spells in classes" :key="spells.document__slug" class="mySpell">
+        <h1 class="title">{{ spells.name }}</h1>
+        <h2 class="body-1">{{ spells.level }} {{ spells.school }}</h2>
+        <h2 class="body-1">{{ spells.dnd_class }}</h2>
+        <v-divider></v-divider>
+        <div class="myCast">
+          <h3 class="body-1 conc">Concentration: {{ spells.concentration }}</h3>
+          <v-divider vertical></v-divider>
+          <h3 class="body-1 conc">Ritual: {{ spells.ritual }}</h3>
+        </div>
+        <div class="spellInfo">
+            <div class="castTime">
+                <h3 class="body-1">Casting Time</h3>
+                <h3 class="body-1"> {{ spells.casting_time }} </h3>
+            </div>
+        </div>
+        <v-divider></v-divider>
+
       </v-col>
     </v-row>
   </div>
@@ -24,11 +29,7 @@ import axios from "axios";
 
 export default {
   name: "spells",
-  methods: {
-    getSpells: myUrl => {
-      // console.log(myUrl)
-    }
-  }, //end methods
+  methods: {}, //end methods
   data() {
     return {
       classes: null
@@ -50,9 +51,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.subLevel {
-  display: flex;
-  flex-direction: row;
+.mySpell {
+    margin: 1rem;
+    padding: .5rem;
+
+  .myCast {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .conc {
+      margin: 0.5rem 0.25rem;
+    }
+  }
 }
 </style>
 
