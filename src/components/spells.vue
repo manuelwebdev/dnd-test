@@ -15,7 +15,7 @@
         <div class="spellInfo">
           <div class="castTime">
             <v-chip class="ma-2" color="success" outlined>
-              <i class="far fa-clock"></i>
+              <i class="far fa-clock fa-2x"></i>
             </v-chip>
             <h3 class="body-1">{{ spells.casting_time }}</h3>
           </div>
