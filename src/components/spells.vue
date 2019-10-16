@@ -14,12 +14,35 @@
         <v-divider></v-divider>
         <div class="spellInfo">
           <div class="castTime">
-            <v-chip class="ma-2" color="success" outlined>
-              <i class="far fa-clock fa-2x"></i>
+            <v-chip class="myChip" color="success" outlined>
+              <i class="far fa-clock fa-1x"></i>
+              <p class="body-1 castHead">Casting Time</p>
+            </v-chip>
+            <h3 class="body-1">{{ spells.casting_time }}</h3>
+          </div>
+          <div class="components">
+            <v-chip class="myChip" color="success" outlined>
+              <i class="far fa-clock fa-1x"></i>
+              <p class="body-1 castHead">Casting Time</p>
+            </v-chip>
+            <h3 class="body-1">{{ spells.casting_time }}</h3>
+          </div>
+          <div class="duration">
+            <v-chip class="myChip" color="success" outlined>
+              <i class="far fa-clock fa-1x"></i>
+              <p class="body-1 castHead">Casting Time</p>
+            </v-chip>
+            <h3 class="body-1">{{ spells.casting_time }}</h3>
+          </div>
+          <div class="range">
+            <v-chip class="myChip" color="success" outlined>
+              <i class="far fa-clock fa-1x"></i>
+              <p class="body-1 castHead">Casting Time</p>
             </v-chip>
             <h3 class="body-1">{{ spells.casting_time }}</h3>
           </div>
         </div>
+
       </v-col>
     </v-row>
   </div>
@@ -60,11 +83,40 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
 
     .conc {
       margin: 0.5rem 0.25rem;
     }
   }
+  .spellInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .castTime, .components, .duration, .range {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 49%;
+    }
+    .castTime {
+      
+      .castHead {
+        margin: 0.25rem 0.5rem;
+      }
+    }
+    .components {
+    }
+    .duration {
+    }
+    .range {
+    }
+  }
+}
+.myChip {
+  width: 100%;
 }
 </style>
 
