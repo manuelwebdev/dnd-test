@@ -1,11 +1,11 @@
 <template>
   <div class="spells">
-    <v-row>
+    <v-row justify="center">
       <v-col cols="3" v-for="spells in classes" :key="spells.document__slug" class="mySpell">
         <v-card class="myCard">
           <h1 class="title">{{ spells.name }}</h1>
-          <h2 class="body-1">{{ spells.level }} - {{ spells.school }}</h2>
-          <h2 class="body-1">{{ spells.dnd_class }}</h2>
+          <h2 class="body-1 font-weight-thin">{{ spells.level }} - {{ spells.school }}</h2>
+          <h2 class="body-1 font-weight-thin">{{ spells.dnd_class }}</h2>
           <v-divider></v-divider>
           <div class="myCast">
             <h3 class="body-1">Concentration: {{ spells.concentration }}</h3>
