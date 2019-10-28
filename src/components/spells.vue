@@ -2,7 +2,7 @@
   <div class="spells">
     <v-row>
       <v-col cols="3" v-for="spells in classes" :key="spells.document__slug" class="mySpell">
-        <v-card>
+        <v-card class="myCard">
           <h1 class="title">{{ spells.name }}</h1>
           <h2 class="body-1">{{ spells.level }} - {{ spells.school }}</h2>
           <h2 class="body-1">{{ spells.dnd_class }}</h2>
@@ -44,7 +44,7 @@
             </div>
           </div>
           <v-divider></v-divider>
-          <p class="body-2">{{ spells.desc }}</p>
+          <p class="body-2 description">{{ spells.desc }}</p>
         </v-card>
       </v-col>
     </v-row>
@@ -88,6 +88,9 @@ export default {
   margin: 1rem;
   padding: 0.5rem;
 
+  .myCard {
+    padding: 1rem;
+
   .myCast {
     display: flex;
     flex-direction: row;
@@ -120,6 +123,10 @@ export default {
         }
       }
     }
+  }
+  .description {
+    padding: 1rem 0;
+  }
   }
 }
 </style>
