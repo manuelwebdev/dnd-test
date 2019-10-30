@@ -78,6 +78,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.spells {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
 .myDivide {
   margin: 1rem 0;
 }
