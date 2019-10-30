@@ -1,6 +1,5 @@
 <template>
-  <div class="spells">
-    <v-row justify="center">
+    <v-row class="spells">
       <v-col cols="3" v-for="spells in classes" :key="spells.document__slug" class="mySpell">
         <v-card class="myCard">
           <h1 class="title">{{ spells.name }}</h1>
@@ -48,7 +47,6 @@
         </v-card>
       </v-col>
     </v-row>
-  </div>
 </template>
 
 <script>
@@ -79,9 +77,10 @@ export default {
 
 <style lang="scss" scoped>
 .spells {
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 .myDivide {
   margin: 1rem 0;
