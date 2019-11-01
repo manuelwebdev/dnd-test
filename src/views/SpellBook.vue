@@ -9,6 +9,7 @@
 import spells from "./components/Spells.vue";
 
 export default {
+  name: "spellbook",
   components: {
     spells,
   }
