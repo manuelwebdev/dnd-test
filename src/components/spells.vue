@@ -4,8 +4,8 @@
            align="center">
       <v-col cols="12"
              sm="8"
-             md="6"
-             lg="4"
+             md="5"
+             lg="3"
              xl="3"
              v-for="spells in classes" 
              :key="spells.document__slug" 
