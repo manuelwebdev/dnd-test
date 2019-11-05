@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
+//PAGES
 import Home from "./views/Home.vue";
 import SpellBook from "./views/SpellBook.vue";
 
@@ -11,6 +12,7 @@ export default new Router({
   routes: [
     {
       path: "/",
+      name: "home",
       component: Home
     },
     {

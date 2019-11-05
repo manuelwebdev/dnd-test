@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+    <img alt="Vue logo" src="../assets/logo.png" />
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     
 
@@ -10,13 +10,13 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
-import spells from "@/components/spells.vue";
+// import spells from "@/components/spells.vue";
 
 export default {
   name: "home",
   components: {
     HelloWorld,
-    spells,
+    // spells,
   }
 };
 </script>

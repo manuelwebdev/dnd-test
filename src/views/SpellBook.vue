@@ -6,8 +6,7 @@
 </template>
 
 <script>
-import spells from "./components/Spells.vue";
-
+import spells from "../components/spells";
 export default {
   name: "spellbook",
   components: {
