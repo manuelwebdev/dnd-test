@@ -90,6 +90,7 @@ export default {
   max-width: 10d00px;
   display: flex;
   justify-content: center;
+  align-items: stretch;
   margin: 0;
 }
 .myDivide {
