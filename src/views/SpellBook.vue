@@ -15,3 +15,14 @@ export default {
   
 }
 </script>
+
+<style lang="scss" scoped>
+.spellbook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center;
+  }
+}
+</style>
