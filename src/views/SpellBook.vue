@@ -17,12 +17,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.spellbook {
+.spellBook {
   display: flex;
   flex-direction: column;
   align-items: center;
-  h1 {
-    text-align: center;
-  }
+  // h1 {
+  //   text-align: center;
+  // }
 }
 </style>
