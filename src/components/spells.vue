@@ -16,7 +16,7 @@
           <h2 class="body-1 font-weight-thin">{{ spells.dnd_class }}</h2>
           <v-divider></v-divider>
           <div class="myCast">
-            <h3 class="body-1">Concentration: {{ spells.concentration }}</h3>
+            <h3 class="body-1" onload="alert('test')">Concentration: {{ spells.concentration }}</h3>
             <v-divider vertical></v-divider>
             <h3 class="body-1">Ritual: {{ spells.ritual }}</h3>
           </div>
