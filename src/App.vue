@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav" color="primary">
+    <div id="nav" class="primary">
       <router-link to="/">Home</router-link>|
       <router-link to="/SpellBook">Spells</router-link>
     </div>
@@ -17,6 +17,7 @@
   color: #2c3e50;
 }
 #nav {
+  background-color: #2c3e50;
   padding: 30px;
   display: flex;
   justify-content: space-around;
