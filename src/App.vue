@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header />
     <div id="nav" class="primary">
       <router-link to="/">Home</router-link>|
       <router-link to="/SpellBook">Spells</router-link>
@@ -7,6 +8,17 @@
     <router-view />
   </div>
 </template>
+
+<script>
+import Header from '@/components/Header.vue';
+
+export default {
+  components: {
+    Header,
+  }
+  
+}
+</script>
 
 <style lang="scss">
 #app {
