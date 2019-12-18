@@ -1,25 +1,26 @@
 <template>
-  <v-card color="grey lighten-4" flat height="200px" tile>
-    <v-toolbar dense>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+  <v-toolbar>
+    <v-toolbar-title>D&D Companion</v-toolbar-title>
 
-      <v-toolbar-title>D & D</v-toolbar-title>
+    <v-spacer></v-spacer>
 
-      <v-spacer></v-spacer>
+    <v-toolbar-items>
+      <v-btn text><router-link to="/">Home</router-link></v-btn>
+      <v-btn text><router-link to="/SpellBook">Spells</router-link></v-btn>
+    </v-toolbar-items>
 
+    <template v-if="$vuetify.breakpoint.smAndUp">
       <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon>mdi-export-variant</v-icon>
       </v-btn>
-
       <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
+        <v-icon>mdi-delete-circle</v-icon>
       </v-btn>
-
       <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
+        <v-icon>mdi-plus-circle</v-icon>
       </v-btn>
-    </v-toolbar>
-  </v-card>
+    </template>
+  </v-toolbar>
 </template>
 
 <script>
