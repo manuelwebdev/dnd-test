@@ -1,6 +1,6 @@
 <template>
   <v-toolbar>
-    <v-toolbar-title>D&D Companion</v-toolbar-title>
+    <v-toolbar-title class="primary">D&D Companion</v-toolbar-title>
 
     <v-spacer></v-spacer>
 
